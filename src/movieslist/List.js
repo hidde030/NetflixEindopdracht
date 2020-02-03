@@ -22,11 +22,9 @@ class List extends Component {
   componentDidMount() {
     this.mounted = true;
     const url =
-      typeof this.props.apiCall === "number"
-        ? `https://api.themoviedb.org/3/discover/movie?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${
+      typeof this.props.apiCall === "number" ? `https://api.themoviedb.org/3/discover/movie?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${
             this.props.apiCall
-          }`
-        : `https://api.themoviedb.org/3/movie/${this.props.apiCall}?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&page=1`;
+          }` : `https://api.themoviedb.org/3/movie/${this.props.apiCall}?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&page=1`;
 
     fetch(url)
       .then(r => r.json())

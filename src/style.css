@@ -39,10 +39,10 @@ float: left;
 
 .search-input {
   background: none;
-  color: #cc0000;
-  border: 1px solid #cc0000;
+  color: white;
+  border: 1px solid whitesmoke;
   outline: none;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 5px;
   padding-left: 15px;
   width: 250px;
@@ -56,7 +56,7 @@ float: left;
   background: #0d0d0d;
   width: 265px;
   border-radius: 5px;
-  border: 2px solid #cc0000;
+  border: 2px solid white;
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -80,7 +80,7 @@ float: left;
 
 .search-values a {
   text-decoration: none;
-  color: #e60000;
+  color: white;
 }
 
 .search-values a:hover {
@@ -141,14 +141,14 @@ float: left;
   height: 10px;
   background: transparent;
   border: 1px solid white;
-  border-radius: 2px;
+  border-radius: 25px;
   display: inline-block;
   margin: 20px;
   cursor: pointer;
 }
 
 .switchImg div.active {
-  background: #404040;
+  background: rgba(255, 251, 251, 0.7)
 }
 
 /*lists of movies*/
@@ -489,4 +489,10 @@ footer p {
   .back-height {
     height: 100%;
   }
+}
+.sign-in{
+  padding-top: 15px;
+  padding-right: 20px;  
+  float: right;
+  color:white;
 }
